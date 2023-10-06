@@ -4,11 +4,11 @@ Created on Thu Oct  5 17:59:11 2023
 
 @author: didri
 """
-nltk.download("stopwords")
 import numpy as np
 import pickle
 from flask import Flask, request, jsonify, render_template
 import nltk
+nltk.download("stopwords")
 import re
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
