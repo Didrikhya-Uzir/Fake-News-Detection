@@ -13,6 +13,7 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
+nltk.download("stopwords")
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
